@@ -1,0 +1,270 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+html {
+  scroll-behavior: smooth;
+}
+
+#topSection {
+
+}
+
+.button a{
+	color: white;
+}
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+header {
+	color: black;
+	padding: 10px 15px 15px 15px;
+	background-image: url("qbkls.png");
+	background-attachment: fixed;
+  	background-position: center;
+}
+
+header a{
+	color: black;
+}
+
+footer {
+	color: black;
+	padding: 10px 15px 15px 15px;
+	background-image: url("qbkls.png");
+	background-attachment: fixed;
+  	background-position: center;
+
+}
+
+body {
+	background-image: url("prism.png");
+	font-family: 'Raleway', sans-serif;
+	color: white;
+
+
+}
+
+body nav ul li {
+	border-style: solid;
+	border-color: black;
+	border-radius: 15px;
+	display:  inline-block;
+	margin: 0% 1%;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 0.5% 1%;
+	margin: 1%;
+	color: black;
+
+}
+
+header h1 {
+	margin: 0;
+	padding: 1%
+
+}
+
+
+nav ul li a {
+	color: black;
+}
+
+nav ul li:hover {
+	background-color:#555;
+	color: white;
+}
+
+
+
+
+.tab {
+	width: auto;
+	margin-left: auto ;
+	margin-right: auto ;
+
+}
+
+.col  {
+	float: left;
+	padding: 0.1px
+	margin: 0.1%;
+	width: 33.33333333333333333%;
+	border-spacing: 5%;
+
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.header {
+	display: inline-block;
+	padding: 15px;
+}
+
+.header_title {
+	font-size: 350%;
+}
+
+.container{
+  padding: 1em 0;
+  float: left;
+  width: 50%;
+}
+
+@media screen and (max-width: 900px){
+  .container{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container{
+    width: 33.33333%;
+  }
+}
+
+.container .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
+}
+
+.content img {
+	border-bottom: solid thin white;
+}
+
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.container .title{
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container-input {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+

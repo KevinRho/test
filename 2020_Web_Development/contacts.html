@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+
+
+
+<html>
+<head>
+		<title>Easy Tabs: Ruitab</title>
+		<link rel="stylesheet" href="rho_guitar.css">
+		<style>
+			a {text-decoration: none;} 
+		</style>
+
+		<script language=”JavaScript”>
+
+		var frmvalidator = new Validator("contactform"); frmvalidator.addValidation("name","req","Please provide your name"); 
+		frmvalidator.addValidation("email","req","Please provide your email");
+		frmvalidator.addValidation("email","email", "Please enter a valid email address"); 
+
+		
+
+		</script>
+
+	</head>
+
+	<body>
+		<header>
+			<center>
+				<nav>
+					<br>
+					<a href="home_music_sheet.html"><h1 class="header_title"> Ruitab </h1>
+					<h5>Rho Guitar Tab</h5></a>
+					<br><br>
+					<ul>
+						<a href="home_music_sheet.html"><li>Home</li></a>
+						<a href="easy.html"><li>Easy</li></a>
+						<a href="medium.html"><li>Medium</li></a>
+						<a href="hard.html"><li>Hard</li> </a>
+						<a href="ghibli.html"><li>Ghibli Studio</li> </a>
+						<a href="korean.html"><li>Korean</li> </a>
+						<a href="classic.html"><li>Classic</li> </a>
+						<a href="chords.html"><li>Basic Chords</li> </a>
+						<a href="contacts.html"><li>Basic Contact</li> </a>
+					</ul>
+				</nav>
+			</center>
+			<br>
+		</header>
+
+		<div class="container-input">
+
+		<form method=”post” name=”contact_form” action=”contact-form-handler.php”> Your Name: <input type=”text” name=”name”> Email Address:
+
+		<input type=”text” name=”email”> Message:
+
+		<textarea name=”message”></textarea>
+
+		<input type=”submit” value=”Submit”>
+
+		</form>
+	</div>
+
+
+	</body>
+</html>
